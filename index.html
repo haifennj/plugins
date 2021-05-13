@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugins>
+    <plugin id="com-actionsoft-aws-idea-plugin" url="https://haifennj.github.io/files/AWSIdeaPlugin-v2.2.9.zip" version="2.2.9">
+        <idea-version since-build="145.0"/>
+        <name>AWS Developer Plugin</name>
+        <vendor email="haifennj@gmail.com">haifennj</vendor>
+        <rating>5</rating>
+        <description>
+            <![CDATA[
+            <b>AWS开发者插件</b><br/>
+            作者：<br/>
+            Haifennj,Willard<br/>
+            功能：<br/>
+            <li>自动创建或者更新AWS需要的Libraries</li>
+            <p style="padding-left: 12px;">在Project Settings中的Libraries中自动创建名为“aws_lib”的库，同时搜索名称为“release”的Module，自动加载bin\jdbc以及bin\lib目录下的jar包，达到自动刷新AWS运行环境库文件的目的。</p>
+            <p style="padding-left: 12px;">菜单入口：Tools--AWS Libraries 更新</p>
+            <li>根据当前Modules创建Artifacts</li>
+            <p style="padding-left: 12px;">方便打包，App的Module的jar包会自动输出到App相应目录。</p>
+            <p style="padding-left: 12px;">菜单入口：Tools--AWS Artifacts 更新</p>
+            <li>更新Modules的Dependencies</li>
+            <p style="padding-left: 12px;">方便管理Module间的依赖关系。</p>
+            <p style="padding-left: 12px;">菜单入口：Tools--AWS Dependencies 更新</p>
+            <br>
+            <em>注意：选择菜单操作之前，首先在Project中创建名称为“release”的Module</em>
+            <li>暂停AWS App</li>
+            <p style="padding-left: 12px;">在Settings-Other Settings-AWS Suspend App中，维护一个暂停AWS App的列表。</p>
+            <p style="padding-left: 12px;">如果本地AWS App的暂停状态和设置不一样，列表中的“应用名称”列会变为红色背景，点击apply或ok按钮会应用当前设置到本地AWS App。</p>
+            ]]>
+        </description>
+        <change-notes>
+            <![CDATA[
+            2.2.9：2021.04.29
+            <ol>
+            <li>可以右键直接创建release的module。</li>
+            </ol>
+            2.2.8：2021.04.14
+            <ol>
+            <li>优化重建aws_lib的过程。</li>
+            <li>优化刷新依赖时的逻辑。</li>
+            </ol>
+            2.2.7：2021.02.17
+            <ol>
+            <li>优化右键菜单的展示。</li>
+            </ol>
+            2.2.6：2020.12.06
+            <ol>
+            <li>优化判断Module的机制，排除非Java的Module。</li>
+            <li>应用可以独立创建Module</li>
+            </ol>
+            2.2.5：2020.05.16
+            <ol>
+            <li>优化复制文件到桌面时，在桌面创建以工程名命名的文件夹。</li>
+            </ol>
+            2.2.4：2019.02.01
+            <ol>
+            <li>优化更新依赖的时将无效的Module删除。</li>
+            <li>优化创建Module时的Module SDK使用Project SDK。</li>
+            <li>优化提示信息出现的位置。</li>
+            </ol>
+            2.2.3：2018.11.05
+            <ol>
+            <li>优化Git库的modules中的目录可以直接右键创建Module。</li>
+            <li>优化可以批量创建符号/目录链接。创建后，自动刷新release/apps/install目录。</li>
+            </ol>
+            2.2.2：2018.08.05
+            <ol>
+            <li>优化AWS Suspend App的功能。</li>
+            </ol>
+            2.2.1：2018.03.28
+            <ol>
+            <li>添加菜单，一键更新AWS库文件和依赖。</li>
+            </ol>
+            2.2.0：2018.01.07
+            <ol>
+            <li>一系列的优化。</li>
+            </ol>
+            2.1：2017.12.24<br/>
+            <ol>
+            <li>优化通过AWS App文件夹创建Module后自动添加lib目录的三方jar包。</li>
+            <li>增加web包和upgrade包的Libraries。</li>
+            </ol>
+            2.0：2017.09.23
+            <ol>
+            <li>优化操作后的通知提示方式。</li>
+            </ol>
+            1.9：2017.05.20，增加通过AWS App文件夹创建Module。优化AWS Suspend App在Mac OS不能加载的问题。<br/>
+            1.8：2017.05.18，优化Suspend AWS App自动启动的细节<br/>
+            1.7：2017.05.17，增加Suspend AWS App自动启动的功能<br/>
+            1.6：2017.05.07，增加更新Dependencies的功能<br/>
+            1.5：2017.03.01，更新Libraries的时候，排除Web资源的Module源码<br/>
+            1.4：2017.02.09，修复创建Artifact时候命名以及路径的问题，仅创建需要打包的Artifact<br/>
+            1.3：2017.01.17，更新Libraries的时候，将对应Module的jar包排除<br/>
+            1.2：2017.01.16，自动根据当前的Modules创建Artifacts<br/>
+            1.1：2017.01.13，在Libraries中增加对应Module的Source目录<br/>
+            1.0：2017.01.07，初始版本
+            ]]>
+        </change-notes>
+    </plugin>
+    <plugin id="com.lxl.unique.plugin.id" url="https://haifennj.github.io/files/PackageJarsOptimized-v1.3.4.jar" version="1.3.4">
+        <name>PackageJars Optimized</name>
+        <vendor email="75306469@qq.com" url="75306469@qq.com"></vendor>
+    </plugin>
+</plugins>
